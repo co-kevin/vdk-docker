@@ -5,4 +5,4 @@ RUN mkdir -p /vdk
 WORKDIR /vdk
 
 COPY package.json ./
-RUN yarn
+RUN yarn config set registry 'https://registry.npm.taobao.org' && yarn
